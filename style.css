@@ -1,0 +1,124 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #19a1ad;
+    font-family: "Kumbh Sans", serif;
+    font-size: 18px;
+  }
+
+  .flxbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper {
+    height: 100vh;
+    position: relative;
+    background-image: url("images/bg-pattern-top.svg"),
+      url("images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 60%, 60%;
+    background-position: -100px -500px, 700px 350px;
+  }
+
+  .container {
+    background-color: white;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.129);
+  }
+
+  .top-section {
+    padding: 35px;
+    width: 100%;
+    background-image: url("images/bg-pattern-card.svg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 35px;
+  }
+
+  .top-section img {
+    width: 90px;
+    border-radius: 50%;
+    margin-top: 35px;
+    margin-bottom: -70px;
+    border: 5px solid white;
+  }
+
+  .bottom-section {
+    padding: 20px;
+    gap: 5px;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.533);
+    width: 100%;
+  }
+
+  .bottom-section h1 {
+    font-size: 18px;
+  }
+
+  .age {
+    margin-left: 5px;
+    font-weight: 500;
+  }
+
+  .bottom-section span {
+    font-size: 16px;
+    color: hsl(0, 0%, 59%);
+  }
+
+  .stats-section {
+    padding: 30px 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .stats-box {
+    gap: 5px;
+  }
+
+  .stats-box b {
+    font-size: 22px;
+  }
+
+  .stats-box span {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: hsl(0, 0%, 59%);
+  }
+
+  footer {
+    padding: 10px;
+    background-color: white;
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+
+    .wrapper {
+      position: relative;
+      background-image: url("images/bg-pattern-top.svg"),
+        url("images/bg-pattern-bottom.svg");
+      background-repeat: no-repeat, no-repeat;
+      background-size: 100%, 100%;
+      background-position: -150px -200px, 180px 350px;
+    }
+  }
